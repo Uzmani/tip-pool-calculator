@@ -1,0 +1,460 @@
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   app styles
+   ========================================================================== */
+
+body {
+  background-color: #E8EDE0;
+  margin: 0px;
+}
+
+input {
+  border-radius: 4px;
+  border-bottom: darkgray;
+}
+
+#container {
+  margin: 0 auto;
+}
+/*Header styles */
+#heading {
+  background-color: #102e37;
+  line-height: 50px;
+  -moz-box-shadow:    3px 3px 10px 8px #ccc;
+  -webkit-box-shadow: 3px 3px 10px 8px #ccc;
+  box-shadow:         3px 3px 10px 8px #ccb;
+}
+
+#heading h2 {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  margin:0 0 0 10px;
+  padding:0;
+  color: #fff;
+}
+
+#heading img {
+  position: absolute;
+  height: 50px;
+  top:0;
+  right:0;
+}
+
+/* results styles */
+#first-name {
+    font-size: 1.5em;
+}
+
+#tips-made {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* input box styles */
+
+.bartender-info {
+  position: relative;
+  left: 1px;
+  margin: 0 0 8px 15px;
+}
+
+.name-box {
+  width: 110px;
+  height: 25px;
+}
+  
+.hours-box {
+  width: 45px;
+  height: 25px;
+  margin-right: 1px;
+}
+
+#dollar-sign {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#total-pool {
+  width: 178px;
+  height: 25px;
+  margin: 25px 0 0 4px;
+
+}
+
+/*validation errors*/
+
+#error-list {
+  margin-bottom: 8px;
+}
+
+.errors {
+  background-color: pink;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  text-decoration: none;
+  color: red;
+  line-height: 40px;
+  font-size: 1em
+}
+
+.close-error-btn {
+  background: pink;
+  position: absolute;
+  right: 0;
+  height: 39px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+/*Add bartender button*/
+#add-button {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  background-color: #4BAB63;
+  height: 38px;
+  line-height: 30px;
+  color: white;
+  margin: 0 0 0 15px;
+  border-radius: 3px;
+  border-style: none;
+}
+
+#add-button:hover {
+  background-color: #52d017;
+}
+
+#add-button img {
+  width: 30px;
+  margin: 0 3px 0 0;
+}
+
+
+
+/*Remove bartenter button*/
+
+.remove-button {
+  height: 30px;
+  margin-left: 5px;
+}
+
+.remove-button:hover {
+  height: 31px;
+}
+
+
+/*Calculate tips button */
+#calc-butt  {
+  text-align: center;
+}
+
+.calc-button {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700; 
+  font-size: 1.2em;
+  background-color: #FA730F;
+  border-radius: 3px;
+  border-style: none;
+  color: white;
+  width: 98%;
+  height: 50px;
+}
+.calc-button:hover {
+  background-color: #F78D3F;
+}
+
+/*Placeholder styles*/
+::-webkit-input-placeholder { font-size: .85em; }
+::-moz-placeholder { font-size: .85em; } /* firefox 19+ */
+:-ms-input-placeholder { font-size: .85em; } /* ie */
+
+/* Render Results */
+#name {
+  margin: 5px 0 0 10px;
+}
+
+#tips-made {
+  color: green;
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
